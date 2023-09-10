@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 class chislo {
     public:
@@ -44,7 +45,7 @@ int main()
         }
     }
     cout << sch_2 << "\n";
-    if ((l<1)||(l>1000000000000000000)||(r>1000000000000000000)||(l>r)||(r<1)) {
+    if ((l<1)||(l>pow(10,18))||(r>pow(10,18))||(l>r)||(r<1)) {
         throw 1;
     }
     }
